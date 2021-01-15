@@ -1,6 +1,3 @@
-/*
- * vec.c
- */
 #include <stdlib.h>
 #include "./vec.h"
 
@@ -8,21 +5,18 @@
 vec_ptr new_vec(long length) {
     vec_ptr vec = (vec_ptr)malloc(sizeof(vec_rec));
 
-    // srand((unsigned int)time(NULL));
     vec->data = malloc(length * sizeof(data_t));
-    
+
     if (!vec->data)
         return 0;
 
     for (unsigned long i = 0; i < length; i++)
     {
       (vec->data)[i] = (data_t) i;
-      // (vec->data)[i] = (data_t) rand() / (data_t)(RAND_MAX/ 100);
     }
-        
 
     vec->length = length;
-    
+
     return vec;
 }
 
