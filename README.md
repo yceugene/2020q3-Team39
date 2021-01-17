@@ -24,12 +24,18 @@ A study of CS:APP Homework 5.13.
     ```
 * Plot the relationship graph between the CPE and number of vector elements.
     ``` bash
-    $ make plot:
+    $ make plot
 	```
     or
     ```
     $ gnuplot plot.gp
     ```
+* Tried to make the program runs on single CPU-core (CPU:1) only.
+    ``` bash
+    $ make 5_13_SetAffinity
+    $ ./5_13_SetAffinity
+	```
+
 ## Reference:
 * [Assign 5.13](https://hackmd.io/@dange/H1bmDn5am) / [Github](https://github.com/allenchen8210/team15)
 * [DreamAndDead/CSAPP-3e-Solutions](https://github.com/DreamAndDead/CSAPP-3e-Solutions)
