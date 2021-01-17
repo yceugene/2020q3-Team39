@@ -12,6 +12,9 @@ CC = gcc
 5_13_inline: 5_13_inline.c clock.c fcyc.c
 	$(CC) 5_13_inline.c clock.c fcyc.c -o 5_13_inline
 
+5_13_SetAffinity: 5_13_SetAffinity.c clock.c fcyc.c
+	$(CC) 5_13_SetAffinity.c clock.c fcyc.c -o 5_13_SetAffinity
+
 plot:
 	gnuplot plot.gp
 
@@ -25,3 +28,4 @@ clean:
 	@rm -f 5_13perfLAB
 	@rm -f 5_13_inner
 	@rm -f 5_13_inline
+	@rm -f 5_13_SetAffinity
